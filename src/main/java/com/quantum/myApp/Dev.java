@@ -7,10 +7,15 @@ import org.springframework.stereotype.Component;
 public class Dev {
 //    @Autowired //field injection
     private Laptop laptop;
-    public Dev(Laptop laptop){
+
+//    public Dev(Laptop laptop){ //constructor injection
+//        this.laptop = laptop;
+//    }
+
+    @Autowired
+    public void setLaptop(Laptop laptop) {
         this.laptop = laptop;
     }
-
 
     public void build(){
 
