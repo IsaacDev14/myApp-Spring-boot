@@ -3,7 +3,7 @@ package com.quantum.myApp;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Labtop {
+public class Laptop {
 
     public void compile(){
         System.out.println("compiling without Errors");
