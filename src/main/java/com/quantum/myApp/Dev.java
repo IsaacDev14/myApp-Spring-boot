@@ -4,10 +4,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Dev {
+
+    Labtop laptop;
     public void build(){
 
-        compile();
-        debug();
+        laptop.compile();
+
         System.out.println("hi, I'm great in coding");
     }
 }
